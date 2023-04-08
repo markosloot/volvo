@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1_model {
+  margin-top: 97px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+.model_type {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.model_type-ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+}
+
+.model_type-ul li a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: none;
+  color: #161618;
+  opacity: 1;
+}
+
+.model_type-li_1 {
+  opacity: 0.5;
+}
+
+.model_type-li_3 {
+  opacity: 0.5;
+}
+
+.slider_list {
+  display: flex;
+  gap: 30px;
+}
+
+.slider_item {
+  list-style: none;
+  text-decoration: none;
+}
+
+.slider_item a {
+  text-decoration: none;
+  color: #161618;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.active-car {
+  font-weight: 700;
+  color: #007bcd;
+}
+
+.slider_list:nth-child(2) {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  color: #007bcd;
+}
+
+.car__char__img {
+  margin-top: 87px;
+  display: flex;
+  gap: 93px;
+}
+
+.car_img {
+  padding-top: 37px;
+  background-image: url(img/spec.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.car_name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  color: #161618;
+  margin-bottom: 40px;
+}
+
+.car_char_items {
+  max-width: 388px;
+  display: flex;
+  justify-content: space-between;
+  gap: 97px;
+}
+
+.car_char_item {
+  margin-bottom: 30px;
+}
+
+.car_char_item_name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #161618;
+  opacity: 0.8;
+}
+
+.car_char_item_get {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: #161618;
+}
+
+.check__box {
+  display: flex;
+  gap: 10px;
+}
+
+.check_radio {
+  width: 30px;
+  height: 17px;
+  border: 1px solid #007bcd;
+  border-radius: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.check_radio_pos {
+  background-color: #007bcd;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #007bcd;
+  border-radius: 100%;
+  margin-left: 16px;
+}
+
+.check_radio_pos:active {
+  margin-left: 3px;
+}
+
+.offer-btn__test-drive {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+.offer-btn {
+  background: #007bcd;
+  padding: 19px 43px 21px 43px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.offer-btn:hover {
+  background: #008eec;
+}
+
+.offer-btn span {
+  margin-left: 13px;
+}
+
+.test-drive {
+  color: #161618;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+@media (max-device-width: 320px) {
+  .container {
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .model_type-ul {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .h1_model {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    margin-top: 30px;
+  }
+
+  .slider_list {
+    gap: 0px;
+  }
+
+  .slider_item a img {
+    height: 124px;
+    width: 220px;
+  }
+
+  .slider {
+    max-width: 320px;
+    overflow-x: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider_item {
+    scroll-snap-align: center;
+  }
+
+  .car_img img {
+    width: 290px;
+    height: 109px;
+  }
+
+  .car_img {
+    padding-top: 45px;
+    background-image: url(img/spec.png);
+    background-size: 65%;
+  }
+
+  .car__char__img {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .car_char_item_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .car_char_item_get {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .offer-btn__test-drive {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-device-width: 1125px) {
+  .container {
+    align-items: center;
+  }
+
+  .model_type-ul {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .h1_model {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    margin-top: 30px;
+  }
+
+  .slider_list {
+    gap: 0px;
+  }
+
+  .slider_item a img {
+    height: 124px;
+    width: 220px;
+  }
+
+  .slider {
+    max-width: 320px;
+    overflow-x: hidden;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .slider_item {
+    scroll-snap-align: center;
+  }
+
+  .car_img img {
+    width: 290px;
+    height: 109px;
+  }
+
+  .car_img {
+    padding-top: 45px;
+    background-image: url(img/spec.png);
+    background-size: 65%;
+  }
+
+  .car__char__img {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .car_char_item_name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .car_char_item_get {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .offer-btn__test-drive {
+    display: flex;
+    flex-direction: column;
+  }
+}
